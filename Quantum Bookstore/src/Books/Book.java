@@ -28,4 +28,12 @@ public abstract class Book {
     public boolean isSellable() {
         return true;
     }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getTitle() {
+        return title;
+    }
 }

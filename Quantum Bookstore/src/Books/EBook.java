@@ -1,6 +1,6 @@
 package Books;
 
-public class EBook extends Book{
+public class EBook extends Book {
     private String fileType;
 
     public EBook(String ISBN, String title, String author, int year, double price, String fileType) {
@@ -15,9 +15,6 @@ public class EBook extends Book{
 
         if (quantity != 1)
             throw new Exception("Quantum book store: EBooks can only be bought one at a time.");
-
-        // simulate sending email
-//        MailService.send(this, email);
 
         double amount = this.getPrice();
         System.out.println("Quantum book store: EBook sent to " + email + ". Amount paid = " + amount);
